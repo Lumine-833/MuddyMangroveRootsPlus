@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "muddy-mangrove-roots-plus",
+	"version": "${version}",
+	"name": "Muddy Mangrove Roots Plus",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/muddy-mangrove-roots-plus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.muddy.roots.MuddyMangroveRootsPlus"
+		],
+		"fabric-datagen": [
+			"com.muddy.roots.MuddyMangroveRootsPlusDataGenerator"
+		],
+        "client": [
+            "com.muddy.roots.MuddyMangroveRootsClient"
+        ]
+	},
+	"mixins": [
+		"muddy-mangrove-roots-plus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
